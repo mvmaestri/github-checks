@@ -1,0 +1,7 @@
+apiVersion: tekton.rht-labs.com/v1alpha1
+kind: GithubChecks
+metadata:
+  name: githubchecks-sample
+spec:
+  # Add fields here
+  foo: bar

@@ -1,0 +1,20 @@
+# permissions for end users to view githubchecks.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: githubchecks-viewer-role
+rules:
+- apiGroups:
+  - tekton.rht-labs.com
+  resources:
+  - githubchecks
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - tekton.rht-labs.com
+  resources:
+  - githubchecks/status
+  verbs:
+  - get

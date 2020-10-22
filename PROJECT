@@ -1,0 +1,11 @@
+domain: rht-labs.com
+layout: go.kubebuilder.io/v2
+projectName: github-checks
+repo: github.com/mvmaestri/github-checks
+resources:
+- group: tekton
+  kind: GithubChecks
+  version: v1alpha1
+version: 3-alpha
+plugins:
+  go.sdk.operatorframework.io/v2-alpha: {}
