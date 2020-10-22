@@ -59,7 +59,7 @@ func (r *GithubChecksReconciler) Reconcile(req ctrl.Request) (ctrl.Result, error
 			log.Info("GithubChecks resource not found. Ignoring since object must be deleted")
 			return ctrl.Result{}, nil
 		}
-		// Error reading the object - requeue the request.
+		// Error reading the object - requeue the request
 		log.Error(err, "Failed to get GithubChecks")
 		// size := gc.Spec.Size
 		return ctrl.Result{}, err
